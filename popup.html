@@ -46,7 +46,7 @@
 
     <div id="wrapper">
         <div id="searchBox" class="ui-corner-all">
-            <input type="text" id="searchField" value="" />
+            <input type="text" id="searchField" value="" tabindex="10"/>
         </div>
 
         <div class="commands-table" style="opacity: 0;">
@@ -55,10 +55,11 @@
                     <i class="fa fa-arrow-left"></i>
                     <span i18n="backToList"></span>
                 </a>
-                <a id="deleteAllButton" class="notOnEmpty" i18n_title="deleteAll">
-                    <i class="fa fa-trash-o"></i>
-                    <span i18n="deleteAll"></span>
-                </a>
+                <button id="deleteAllButton" class="notOnEmpty" i18n_title="deleteAll" tabindex="3">
+                    <i class="fa fa-trash-o" style="font-size: 25px; margin-left: 16px;"></i>
+<!--                    <span i18n="deleteAll"></span>-->
+                </button>
+                <hr>
                 <a id="flagAllButton" class="notOnEmpty" i18n_title="flagAll" style="display: none;">
                     <i class="fa fa-ban" style="color: red;"></i>
                     <span i18n="flagAll"></span>
