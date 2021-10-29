@@ -393,6 +393,7 @@ function setEvents() {
             deleteAll(cookieList, getUrlOfCookies());
             data.nCookiesDeleted += nCookiesDeletedThisTime;
             doSearch();
+            window.close();
         }
         startAlertDialog(_getMessage("Alert_deleteAll"), okFunction);
     });
